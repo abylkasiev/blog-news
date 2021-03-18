@@ -1,0 +1,42 @@
+.foot-up {
+  background-color: rgb(0, 0, 0);
+}
+.foot {
+  padding: 30px 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10rem;
+}
+.footer-title {
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.foot-item {
+  margin-bottom: 10px;
+}
+.foot-link {
+  color: rgb(201, 200, 200);
+  list-style: none;
+  text-decoration: none;
+}
+.foot-link:hover {
+  color: #fff;
+}
+.foot-down {
+  background-color: rgb(66, 66, 66);
+  padding: 0 15px;
+}
+.icons {
+  display: flex;
+}
+.icon {
+  list-style: none;
+  margin-left: 1rem;
+}
+.icon-img {
+  width: 48px;
+}
