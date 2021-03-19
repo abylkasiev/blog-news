@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../container/img/logo.png'
-import address from '../../container/img/address.png'
+import logo from '../../../container/img/logo.png'
+import address from '../../../container/img/address.png'
 import {NavLink} from 'react-router-dom';
 import './Header.css'
 
@@ -10,7 +10,7 @@ class Header extends Component {
             <div className="wrap">
                 <header className="header">
                     <div className="header__up">
-                        <div className="container">
+                        <div className="container header__up-container">
                             <img className="logo" src={logo}/>
                             <a href="#" className="address top-title"><img src={address}/> Bishkek, Kyrgyzstan</a>
                             <p className="worktime">пн-пт<br/>10:00-19:00</p>
@@ -27,13 +27,13 @@ class Header extends Component {
                                         <NavLink className="nav-link" to="/" exact>Главная</NavLink>
                                     </li>
                                     <li className="nav__item">
-                                        <NavLink className="nav-link" to="/" exact>Новости</NavLink>
+                                        <NavLink className="nav-link" to="/News" exact>Новости</NavLink>
                                     </li>
                                     <li className="nav__item">
-                                        <NavLink className="nav-link" to="/" exact>Добавить</NavLink>
+                                        <NavLink className="nav-link" to="/Add" exact>Добавить</NavLink>
                                     </li>
                                     <li className="nav__item">
-                                        <NavLink className="nav-link" to="/" exact>Контакты</NavLink>
+                                        <NavLink className="nav-link" to="/Contact" exact>Контакты</NavLink>
                                     </li>
                                 </ul>
                             </div>

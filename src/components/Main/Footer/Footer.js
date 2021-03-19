@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './Footer.css'
 import {NavLink} from 'react-router-dom';
-import facebook from '../../container/img/facebook.png'
-import telegram from '../../container/img/telegram.png'
-import twitter from '../../container/img/twitter.png'
-import youtube from '../../container/img/youtube.png'
-import whatsapp from '../../container/img/whatsapp.png'
-import logo from '../../container/img/logo.png'
+import facebook from '../../../container/img/facebook.png'
+import telegram from '../../../container/img/telegram.png'
+import twitter from '../../../container/img/twitter.png'
+import youtube from '../../../container/img/youtube.png'
+import whatsapp from '../../../container/img/whatsapp.png'
+import logo from '../../../container/img/logo.png'
 
 
 class Footer extends Component {
@@ -79,7 +79,7 @@ class Footer extends Component {
                     </div>
                 </div>
                 <div className="foot-down">
-                    <div className="container">
+                    <div className="container footer-container">
                         <div className="footer-logo">
                             <img className="logo" src={logo}/>
                         </div>
@@ -111,6 +111,9 @@ class Footer extends Component {
                                     </NavLink>
                                 </li>
                             </ul>
+                        </div>
+                        <div className="foot-data">
+                            <p className="data">© 2018-2021 Global News</p>
                         </div>
                     </div>
                 </div>
