@@ -23,13 +23,13 @@ class Footer extends Component {
                                         <NavLink className="foot-link" to="/" exact>Главная</NavLink>
                                     </li>
                                     <li className="foot-item">
-                                        <NavLink className="foot-link" to="/" exact>Новости</NavLink>
+                                        <NavLink className="foot-link" to="/News" exact>Новости</NavLink>
                                     </li>
                                     <li className="foot-item">
-                                        <NavLink className="foot-link" to="/" exact>Добавить</NavLink>
+                                        <NavLink className="foot-link" to="/Add" exact>Добавить</NavLink>
                                     </li>
                                     <li className="foot-item">
-                                        <NavLink className="foot-link" to="/" exact>Контакты</NavLink>
+                                        <NavLink className="foot-link" to="/Contact" exact>Контакты</NavLink>
                                     </li>
                                 </ul>
                             </div>

@@ -1,0 +1,68 @@
+.add {
+  padding: 90px 15px;
+}
+.add-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #333;
+}
+.form {
+  display: flex;
+  margin-top: 50px;
+}
+.form-inputs {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.add-form-title {
+  font-weight: 700;
+  color: #000;
+}
+.add-form-img,
+.add-form-input {
+  width: 460px;
+  height: 66px;
+  border: 3px solid #bbbbbb;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  font-size: 1rem;
+  margin-top: 13px;
+  margin-bottom: 24px;
+  color: #bbbbbb;
+}
+.add-form-img {
+  cursor: pointer;
+}
+.form-textarea {
+  max-width: 40%;
+  margin-left: 40px;
+}
+.add-form-textarea {
+  width: 460px;
+  height: 185px;
+  border: 3px solid #bbbbbb;
+  box-sizing: border-box;
+  margin-top: 13px;
+  resize: none;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 15px;
+}
+.add-btn {
+  width: 460px;
+  height: 66.13px;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+  background-color: #f79900;
+  letter-spacing: 1px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background-color: #f79800c5;
+}
+input[type="file"] {
+  display: none;
+}

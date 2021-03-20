@@ -1,0 +1,49 @@
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.card {
+  padding: 20px 0 30px 40px;
+  background-color: #333;
+  color: #fff;
+}
+.orange-card {
+  background-color: #f79900;
+}
+.card-title {
+  font-size: 36px;
+  font-weight: 900;
+}
+.bold-weight {
+  margin-top: 20px;
+  font-weight: 900;
+}
+.normal-weight {
+  margin-top: 7px;
+}
+.card-email {
+  margin-top: 30px;
+}
+.map {
+  max-width: 100%;
+}
+.content {
+  padding: 80px 0;
+}
+.contact-text {
+  font-size: 16px;
+  color: #333;
+  line-height: 148.2%;
+  margin-top: 0.7rem;
+}
+.contact-text:nth-child(3) {
+  margin-top: 2rem;
+}
+.card-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-icon {
+  list-style: none;
+}
