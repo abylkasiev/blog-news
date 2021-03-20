@@ -1,9 +1,8 @@
 import { Route, Switch } from 'react-router';
 import './App.css';
-import Body from './components/Main/Body/Body';
 import Footer from './components/Main/Footer/Footer';
 import Header from './components/Main/Header/Header';
-import Main from './components/Main/Header/Header'
+// import Main from './components/Main/Header/Header'
 import News from './components/News/News'
 import Add from './components/Add/Add'
 import Contact from './components/Contact/Contact'
