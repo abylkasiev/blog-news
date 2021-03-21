@@ -42,8 +42,70 @@
 }
 .card-icons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1rem;
+  margin-top: 2rem;
 }
 .card-icon {
   list-style: none;
+}
+.questions-content {
+  max-width: 100%;
+  display: flex;
+  padding: 85px 0;
+}
+.questions-block {
+  max-width: 60%;
+}
+.question-title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 97.7%;
+}
+.question-slogan {
+  margin-top: 50px;
+  font-size: 22px;
+  line-height: 19, 73px;
+  color: #000000;
+}
+.computer {
+  margin-top: 45px;
+  max-width: 200%;
+}
+.questions-form {
+  margin-left: 100px;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.question-label {
+  font-size: 16px;
+  line-height: 148.2%;
+  color: #000000;
+  font-weight: 700;
+}
+.question-input {
+  width: 471px;
+  height: 66px;
+  border: 3px solid #bbbbbb;
+  box-sizing: border-box;
+  padding: 21px 27px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 23px;
+}
+.question-textarea {
+  resize: none;
+  height: 100px;
+}
+.question-btn {
+  width: 471px;
+}
+.question-agree {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 148.2%;
+  color: #000000;
 }

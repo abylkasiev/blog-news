@@ -6,6 +6,7 @@ import telegram from '../../container/img/telegram.png'
 import twitter from '../../container/img/twitter.png'
 import youtube from '../../container/img/youtube.png'
 import whatsapp from '../../container/img/whatsapp.png'
+import computer from '../../container/img/computer.png'
 import './Contact.css'
 
 class Contact extends Component {
@@ -85,6 +86,25 @@ class Contact extends Component {
                 </div>
                 <div className="contact-map">
                     <img className="map" src={maps}/>
+                </div>
+                <div className="container">
+                    <div className="questions-content">
+                        <div className="questions-block">
+                            <h2 className="question-title">Есть<br/>вопросы?</h2>
+                            <p className="question-slogan">Заполните форму и мы свяжемся с вами <br/> в теление одного рабочего дня.</p>
+                            <img className="computer" src={computer}/>
+                        </div>
+                        <div className="questions-form">
+                            <form className="question-form">
+                                <label className="question-label">Имя<input className="question-input" type="name" name="name" placeholder="Представьтесь пожалуйста"/></label>
+                                <label className="question-label">Телефон<input className="question-input" type="number" name="number" placeholder="+996 (000) 000000"/></label>
+                                <label className="question-label">Почта<input className="question-input" type="email" name="email" placeholder="mail@damain.kg"/></label>
+                                <label className="question-label">Вопрос<textarea className="question-input question-textarea" placeholder="Ваш вопрос"></textarea></label>
+                                <button className="add-btn question-btn">Отправить</button>
+                                <p className="question-agree">Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности</p>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
