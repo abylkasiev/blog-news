@@ -151,7 +151,7 @@
   stroke-dasharray: 61.8204345703 61.8204345703;
   stroke-dashoffset: 0;
   transition-delay: 0.25s;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-property: stroke-dashoffset;
 }
@@ -162,7 +162,7 @@
   color: black;
   z-index: 3;
   width: 100%;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 .btn--svg__circle circle {
   transition: transform 0.5s ease-in-out;

@@ -13,7 +13,7 @@ class Add extends Component {
                             <label className="add-form-title">Ваша почта<input className="add-form-input" type="email" name="email" placeholder="Введите email почту"/></label>
                             <p className="add-form-title">Добавить фото</p>
                             <label className="add-form-img">Выберите файл<input className="add-form-input"  type="file" name="file"/></label>
-                            <button className="add-btn">Отправить</button>
+                            <button className="add-btn" onClick="">Отправить</button>
                         </div >
                         <div className="form-textarea"><label className="add-form-title">Tекст<textarea className="add-form-textarea" placeholder="Введите текст..."></textarea></label></div>
                     </form>
