@@ -20,7 +20,7 @@ class Footer extends Component {
                                 <h3 className="footer-title">Меню</h3>
                                 <ul className="foot-nav">
                                     <li className="foot-item">
-                                        <NavLink className="foot-link" to="/" exact>Главная</NavLink>
+                                        <NavLink className="foot-link" to="/Main" exact>Главная</NavLink>
                                     </li>
                                     <li className="foot-item">
                                         <NavLink className="foot-link" to="/News" exact>Новости</NavLink>

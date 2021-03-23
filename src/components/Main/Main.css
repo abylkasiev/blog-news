@@ -1,0 +1,24 @@
+.grey-block{
+    background-color: #333333;
+    padding-bottom: 170px;
+}
+.fresh-news{
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 20px;
+}
+.news-blocks{
+    position: relative;
+}
+.newsPicture{
+    width: 369px;
+}
+.news-cards{
+    position: absolute;
+    top: -100px;
+    padding-bottom: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
