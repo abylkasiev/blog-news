@@ -4,12 +4,9 @@ import address from '../../../container/img/address.png'
 import {NavLink} from 'react-router-dom';
 import './Header.css'
 import TagLink from '../../UI/TagLink/TagLink';
-import Modal from './Modal/Modal';
-import {useState} from 'react'
 
 
 const Header = () => {
-    const [modalActive, setModalActive] = useState(true)
         return (
             <div className="wrap">
                 <header className="header">
@@ -19,8 +16,7 @@ const Header = () => {
                             <a href="#" className="address top-title"><img src={address}/> Bishkek, Kyrgyzstan</a>
                             <p className="worktime">пн-пт<br/>10:00-19:00</p>
                             <a href="#" className="email top-title">welcome@mail.com</a>
-                            <button className="signup" onClick={() => setModalActive(true)}>Sign up</button>
-                            <Modal  active={modalActive} setActive={setModalActive}/>
+                            <button className="signup">Sign up</button>
                             <a href="#" className="number">+996 (000) 000000<br/><p className="free-call top-title">Бесплатный звонок</p></a>
                         </div>
                     </div>
