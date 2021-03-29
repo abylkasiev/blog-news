@@ -6,14 +6,12 @@ import Main from './components/Main/Main'
 import News from './components/News/News'
 import Add from './components/Add/Add'
 import Contact from './components/Contact/Contact'
-import Modal from './components/Main/Header/Modal/Modal';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <Switch>
-        <Modal/>
         <Route  path="/Main" component={Main} />
         <Route  path="/News" component={News} />
         <Route  path="/Add" component={Add} />
