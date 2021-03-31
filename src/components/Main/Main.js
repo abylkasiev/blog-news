@@ -1,8 +1,31 @@
 import React, { Component } from 'react';
 import './Main.css'
-import newsPicture from '../../container/img/news-1.jpg'
+import axios from '../../apishka/axios-firebase';
+import Post from './Post/Post';
+
 
 class Main extends Component {
+    state = {
+        results: []
+    }
+
+    componentDidMount(){
+        axios.get('/news.json?orderBy="heading"&limitToLast=3')
+        .then (response => {
+            console.log(response.data);
+            const fetchedResults = [];
+            for(let key in response.data){
+                fetchedResults.unshift(
+                    {
+                        ...response.data[key],
+                        id:key
+                    }
+                )
+            }
+            this.setState({results:fetchedResults})
+        })
+    }
+
     render() {
         return (
             <div className="main">
@@ -27,24 +50,14 @@ class Main extends Component {
                 <div className="news-blocks">
                     <div className="container">
                         <div className="news-cards">
-                            <div className="news-block">
-                                <img className="newsPicture" src={newsPicture}/>
-                                <h3 className="news-heading">Заголовок</h3>
-                                <p className="news=info-text">Информационнный текст</p>
-                                <a className="read-more">Подробнее</a>
-                            </div>
-                            <div className="news-block">
-                                <img className="newsPicture" src={newsPicture}/>
-                                <h3 className="news-heading">Заголовок</h3>
-                                <p className="news=info-text">Информационнный текст</p>
-                                <a className="read-more">Подробнее</a>
-                            </div>
-                            <div className="news-block">
-                                <img className="newsPicture" src={newsPicture}/>
-                                <h3 className="news-heading">Заголовок</h3>
-                                <p className="news=info-text">Информационнный текст</p>
-                                <a className="read-more">Подробнее</a>
-                            </div>
+                        {
+                                this.state.results.length > 0 ?
+                                this.state.results.map(post => {
+                                    return <Post key={post.id} post={post} />
+
+                                }) : 
+                                <h3>Нет постов</h3>
+                            }
                         </div>
                     </div>
                 </div>
