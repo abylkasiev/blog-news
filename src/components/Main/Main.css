@@ -21,6 +21,6 @@
     position: relative;
     top: -100px;
     display: grid;
-    gap: 1rem;
+    gap: 40px;
     grid-template-columns: repeat(3, 1fr);
 }

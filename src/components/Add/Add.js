@@ -43,7 +43,6 @@ function Add(props) {
                     };
 
                     axios.post('/news.json', news).then(() => {
-                        alert('Send')
                     })
                 })
             }
