@@ -44,6 +44,10 @@
 }
 .icon-img {
   width: 32px;
+  transition: .5s;
+}
+.icon-img:hover{
+  transform: scale(1.2);
 }
 .data {
   color: #bbb;

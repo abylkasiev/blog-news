@@ -20,18 +20,30 @@ class News extends Component {
     componentDidMount(){
         axios.get('/news.json')
         .then (response => {
-            console.log(response.data);
             const fetchedResults = [];
             for(let key in response.data){
                 fetchedResults.unshift(
                     {
                         ...response.data[key],
-                        id:key
+                        id:key,
+                        collapse: false
                     }
                 )
             }
             this.setState({results:fetchedResults})
         })
+    }
+
+    collapseToggle = id => {
+        const index = this.state.results.findIndex(item => item.id === id);
+        const results = [...this.state.results];
+        const item = {...this.state.results[index]};
+
+        item.collapse = !item.collapse;
+
+        results[index] = item;
+
+        this.setState({results});
     }
 
     render() {
@@ -45,8 +57,9 @@ class News extends Component {
                                 return <Post 
                                             key={post.id} 
                                             post={post} 
-                                            remove={() => { this.handleDeleteElement(post.id) 
-                                        }}/>
+                                            remove={() => this.handleDeleteElement(post.id)}
+                                            collapse={() => this.collapseToggle(post.id)}
+                                        />
 
                             }) : 
                             <h3>Нет постов</h3>

@@ -48,8 +48,7 @@ function Add(props) {
             }
         )
 
-        
-
+        e.target.reset()
     }
     return (
         <div className="add">
